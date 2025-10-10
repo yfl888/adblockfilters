@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251010002918
-! Last modified: 2025/10/10 00:29:18
-! Blocked Filters: 96562
+! Version: 20251010094021
+! Last modified: 2025/10/10 09:40:21
+! Blocked Filters: 96560
 !
 ###AC_ad
 ###AD_160
@@ -66539,7 +66539,6 @@ redd.tube##.adsession
 redd.tube##.banner-juicy-desktop
 reddit-livetv-links.blogspot.com#%#//scriptlet("abort-current-inline-script", "document.createElement", ".parentNode.insertBefore(")
 reddit-livetv-links.blogspot.com#%#//scriptlet('abort-current-inline-script', 'addEventListener', 'Adblock')
-reddit-soccerstreams.com##a[href^="https://www.offshorehosting.pro/"]
 reddit.com###subreddit-right-rail__partial > aside > div.py-md > div.text-neutral-content-weak:has(> a[target="_blank"] > img)
 reddit.com##div[data-before-content="advertisement"]
 reddit.com,reddittorjg6rue252oqsxryoxengawnmo46qy4kyii5wtqnwfj4ooad.onion###ad_main_top
@@ -66734,6 +66733,7 @@ report.az##.feed-col > div[style^="height:"]
 reporterpb.com.br#%#//scriptlet('set-constant', 'showModal', 'noopFunc')
 repubblica.it##div[id^="adv-"]
 repubblica.it#%#//scriptlet('prevent-element-src-loading', 'script', 'gpt.js')
+repubblica.it#%#//scriptlet('prevent-element-src-loading', 'script', 'static.chartbeat.com/js/chartbeat_brightcove_plugin.js')
 republicbroadcasting.org##.left-sidebar-padder > #text-8
 republicworld.com###desktop-livetv-728-90
 republicworld.com##.ads-decorator
@@ -88798,6 +88798,7 @@ zzzyk.com###Tinfo
 ||lysq.com/data/attachment/portal/
 ||lywww.com/data/js.php?id=
 ||lywww.com/header_pic.php
+||lzbao.net/mtvbox.
 ||lzep.cn/ep/sda/
 ||lzk.hl.cn/lctp/
 ||lzyysw.com/upload/
@@ -91316,7 +91317,6 @@ zzzyk.com###Tinfo
 ||ptmind.com^$third-party
 ||ptp.stbm.it/pushdown/loader/av/players/player-custom-content.js$replace=/&&e\.loader\.opt\.hasAdv/&&!1/,script
 ||ptrk-wn.com^$third-party
-||pttraffic.online^$popup
 ||ptyw.yiche.com/ssp/
 ||pu*ev.com/?form_email=*&form_phone=$all
 ||pub.javwide.com/UN4DlQ5.js
@@ -91820,7 +91820,6 @@ zzzyk.com###Tinfo
 ||refpaikgai.top^$popup
 ||refpamjeql.top^$popup
 ||refpaxfbvjlw.top^$popup
-||refundsreisner.life^$popup
 ||refutationtiptoe.com^$popup
 ||registercitizen.com/413gkwMT/init.js
 ||regulushamal.top^$popup
@@ -93046,7 +93045,6 @@ zzzyk.com###Tinfo
 ||spellchecker.net/public/*/images/grammarly
 ||spellchecker.net/public/*/js/bioep.js
 ||spendcrazy.net^$popup
-||spicygirlshere.life^$popup
 ||spike.itv.com/itv/tserver/size=*/viewid=
 ||spindl.link/events
 ||spiral.world/events/

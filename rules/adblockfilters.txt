@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251011162533
-! Last modified: 2025/10/11 16:25:33
-! Blocked Filters: 97710
+! Version: 20251012002324
+! Last modified: 2025/10/12 00:23:24
+! Blocked Filters: 97709
 !
 ###AC_ad
 ###AD_160
@@ -14654,8 +14654,6 @@
 ##a[href*=".kaiyunty.live"]
 ##a[href*=".labsda.com"] > img[src^="/game/20"]
 ##a[href*=".lui8426.xyz"]
-##a[href*=".moo8923.net"]
-##a[href*=".nhjhu25hd.com"]
 ##a[href*=".skw036.cc"]
 ##a[href*=".ssmh"][href*="?u="]
 ##a[href*=".sudun.com/"]
@@ -14671,7 +14669,6 @@
 ##a[href*="/2e9c9aa9.com/"]
 ##a[href*="/33hth.cn"]
 ##a[href*="/445.ee/"]
-##a[href*="/75333cc.com:"]
 ##a[href*="/?INTR="]
 ##a[href*="/?Intr="]
 ##a[href*="/?aff="][target="_blank"]
@@ -14680,7 +14677,6 @@
 ##a[href*="/Register?a="]
 ##a[href*="/ads/adscenter."]
 ##a[href*="/auth/register?code="] > img
-##a[href*="/bjty96.vip"]
 ##a[href*="/d27.tv"]
 ##a[href*="/dk35.cc"]
 ##a[href*="/entry/register"][href*="i_code"]
@@ -14692,7 +14688,6 @@
 ##a[href*="/l1y9.com"]
 ##a[href*="/mobads.php?"]
 ##a[href*="/register/?i_code="] > img
-##a[href*="/tg.602.com/"]
 ##a[href*="/uu5566.cn.com/"]
 ##a[href*="/yfj8159.com"]
 ##a[href*="/yigeyuming3880.top"]
@@ -15687,7 +15682,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .*gcdcjr000.fun/$script,third-party
 .*ouvxli*.top/$script,third-party
 .*roytj33.fun/$script,third-party
-.*ryt111.fun/$script,third-party
 .012*sop.xyz/$script,xmlhttprequest,third-party
 .1.1.1.l80.js^
 .1.1.1.l80.js^$third-party
@@ -16075,7 +16069,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .hgo0*uyi.com/$script,xmlhttprequest,third-party
 .hh0*aoik.com/$script,xmlhttprequest,third-party
 .hilton.com/subscription/watermark.gif?
-.hongi7ie8owiie*.site^$script,third-party
 .hootsuite.com/trk?
 .html-load.com/players/*/-1/70/$xmlhttprequest
 .html?android=hx*&_$csp=script-src
@@ -36333,6 +36326,7 @@ amazon.*##div[data-csa-c-painter="sp-cart-mobile-carousel-cards"]
 amazon.*##div[data-csa-c-slot-id^="loom-mobile-brand-footer-slot_hsa-id-"]
 amazon.*##div[data-csa-c-slot-id^="loom-mobile-top-slot_hsa-id-"]
 amazon.*##div[id^="dp-ads-"]
+amazon.*##div[id^="sims-simsContainer_feature_div_"]:has(.sp_info_link)
 amazon.*##div[id^="sp_detail"]
 amazon.*##span[cel_widget_id^="MAIN-FEATURED_ASINS_LIST-"]
 amazon.*##span[cel_widget_id^="MAIN-loom-desktop-brand-footer-slot_hsa-id-CARDS-"]
@@ -62105,6 +62099,7 @@ newstm.in##div[class^="colombia"]
 newstracklive.com##.addBox
 newsweek.com###block-nw-content-recirc
 newsweek.com###recommended
+newsweek.com##.FeaturedMedia_articleFeaturedMedia__LEpVY
 newsweek.com##.block-ibtmedia-dfp
 newsweek.com##.right-rail-ads
 newsweek.com##.subscription-tabs
@@ -67501,6 +67496,8 @@ reddxxx.com##.w-screen.backdrop-blur-md
 reddxxx.com#?#.items-center:-abp-contains(/^ad$/)
 reddxxx.com#?#.mx-auto > div.mb-2:has(> div.flex > div.flex > div > h2:contains(VALENTINES SALE))
 reddxxx.com#?#[role="gridcell"]:-abp-contains(/^AD$/)
+redefine.pl,redcdn.pl,polsatnews.pl,polsatsport.pl,twojapogoda.pl,geekweek.pl,polsatboxgo.pl#%#//scriptlet('google-ima3')
+redefine.pl,redcdn.pl,polsatnews.pl,polsatsport.pl,twojapogoda.pl,geekweek.pl,polsatboxgo.pl#%#//scriptlet('prevent-element-src-loading', 'script', 'imasdk.googleapis.com/js/sdkloader/ima3.js')
 redferret.net##.redfads
 redflagdeals.com###rfd-primis-wrapper
 redflagdeals.com##.inline_leaderboard
@@ -76358,7 +76355,6 @@ v.163.com###v_shapeLeft_divId
 v.163.com###v_shapeRight_divId
 v.163.com##div[style^="width: 140px; height: 199px;"]
 v.24liveblog.com##.lb24-base-list-ad
-v.baidu.com##a[href^="http://www.602.com/"]
 v.baidu.com##div[id^="adv_asp_"]
 v.baidu.com,v.duba.com##div[id*="categoryPageColumn"]
 v.ifeng.com##.keyword
@@ -81188,7 +81184,6 @@ zzzyk.com###Tinfo
 ||31fq.com^$third-party
 ||321mh.com/v1/getadvertise?
 ||32xp.com/upimg/
-||3324.cn^$third-party
 ||333uu.org/config/
 ||33445522.com//admin/adv/
 ||3344ex.com/js/1playerad.js
@@ -86413,6 +86408,7 @@ zzzyk.com###Tinfo
 ||fifa.com/api/v*/ad-manager/$xmlhttprequest,redirect=nooptext
 ||figma.com/api/figment-proxy/
 ||figma.com/api/web_logger/
+||fiinnancesur.com^$popup
 ||fijilive.com/images/wrap/
 ||fijivillage.com/images/ad_pshx.png
 ||file-upload.net/include/mitte-orig.php
@@ -87719,6 +87715,7 @@ zzzyk.com###Tinfo
 ||hifivision.com/data/siropu/aml/$image
 ||high-cdn.com/log.php?
 ||highlight.io^$third-party
+||highlight.run^$third-party
 ||highlights.legaseriea.it^$referrerpolicy=origin
 ||highporn.net/js/aapp.js
 ||hilton.com/zJbufaUX/
@@ -88548,6 +88545,7 @@ zzzyk.com###Tinfo
 ||internationalsexguide.nl/forum/clientscript/PopUnderISG.js
 ||internetslang.com/jass/
 ||internships.com/oGckki0e/init.js
+||interpersonalskillse.info^$popup
 ||interracial-girls.com/chaturbate/
 ||interracial-girls.com/i/$image
 ||interracial.com/int354/script.php
@@ -90915,7 +90913,6 @@ zzzyk.com###Tinfo
 ||myslavegirl.org/Promo
 ||mysociety.org/track/
 ||myspace.com/beacon/
-||mytanwan.com^$third-party
 ||mytoys.ru/ka_z.jpg?
 ||mytrack.pro^$third-party
 ||myuploadedpremium.de/js/main.js$replace=/\\$\(window\.atob\('Lm1haW4tY29udGVudA=='\)\)\.html\(window\.atob\('PGNlbnRlcj48aDE\+UGxlYXNlIGRpc2FibGUgeW91ciBhZGJsb2NrZXIgYW5kIHRoYW4gcmVmcmVzaCB0aGUgcGFnZS48L2gxPjxicj5NYXliZSBDVFJMICsgRjUgd2lsbCBoZWxwIHRvbzwvY2VudGVyPg=='\)\);/var hello;/
@@ -91241,6 +91238,7 @@ zzzyk.com###Tinfo
 ||notion.so/api/v*/teV1
 ||notube.*/p/$popup
 ||notyf.com/pixel/
+||nougacoush.com^$popup
 ||novanthealth.org/v1/tagular/beam
 ||novelcool.com/files/js/auto_ads.js
 ||novelcool.com/files/js/yh_tj.js
@@ -92989,6 +92987,7 @@ zzzyk.com###Tinfo
 ||refpaikgai.top^$popup
 ||refpamjeql.top^$popup
 ||refpaxfbvjlw.top^$popup
+||refundsreisner.life^$popup
 ||refutationtiptoe.com^$popup
 ||registercitizen.com/413gkwMT/init.js
 ||regulushamal.top^$popup
@@ -94131,6 +94130,7 @@ zzzyk.com###Tinfo
 ||somebestgamesus.com^$popup
 ||sonar*.xy.fbcdn.net^
 ||sonar.viously.com^$domain=~aufeminin.com|~futura-sciences.com|~gamekult.com|~gbnews.com|~jeanmarcmorandini.com|~lesnumeriques.com|~marmiton.org|~melty.fr|~nextplz.fr|~the-race.com
+||sonic-prod.cbssports.cloud/analytics/
 ||sonic.fdp.api.flipkart.com/4/data/collector/
 ||sonichits.com/tf.php
 ||sonimei.cn/images/gg.png
@@ -94842,7 +94842,6 @@ zzzyk.com###Tinfo
 ||tanks.lv/top/stats.php
 ||tanseb.com/vads/
 ||tantifilm.top^*/ping
-||tanwanyx.com^$third-party
 ||tanweb.net/wordpress/?rest_route=/sng/v1/page-count
 ||tanx.com^$third-party
 ||tanx.com^$third-party,domain=~1688.com|~alimama.com|~tmall.com|~www.taobao.com

@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251018162647
-! Last modified: 2025/10/18 16:26:47
-! Blocked Filters: 96312
+! Version: 20251019002432
+! Last modified: 2025/10/19 00:24:32
+! Blocked Filters: 96309
 !
 ###AC_ad
 ###AD_160
@@ -19621,7 +19621,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /live173_*/46860.
 /live800.
 /livecounter.php?wid=
-/livejasmin.$~xmlhttprequest,domain=~livejasmin.com
 /livestats.js
 /livezilla/server.php?request=track&
 /ljcounter/?d=
@@ -20024,6 +20023,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /oo/*/lsync.js
 /oo/cl*.js?rd=
 /oo/cl.js|$~third-party
+/op/analytics.js?domain=
 /opbb/float.js
 /opbb/obpp.tpl
 /opdc.js
@@ -34827,7 +34827,6 @@ a9vg.com##.a9-back-top_qrcode
 aa.com.tr#?#.container > style ~ div.ad:has(> span > a:not([href^="https://www.aa.com.tr/"]))
 aa25.cn###content_head
 aa25.cn,kafan.cn###content_top
-aaaweb.cn##a[href$=".yhzu.cn"]
 aads.com,ad-maven.com,adcash.com,admitad.com,adskeeper.com,adspyglass.com,adsupply.com,chpadblock.com,exoclick.com,hilltopads.com,juicyads.com,luckyads.pro,monetag.com,popads.net,propellerads.com,purpleads.io,trafficshop.com,yavli.com##HTML
 aae3.com###menu
 aae3.com##form + center > p[align="center"]
@@ -35844,6 +35843,7 @@ amazon.*###sponsoredProducts_feature_div
 amazon.*###typ-recommendations-stripe-1
 amazon.*###typ-recommendations-stripe-2
 amazon.*##.AdsCard_container__K6vmo
+amazon.*##.a-cardui[class*="_new-detail-faceout-box_"]:has(.dynamicSponsoredLabelClass)
 amazon.*##.amzn-safe-frame-container
 amazon.*##.dp-widget-card-deck:has([data-ad-placement-metadata])
 amazon.*##.s-main-slot > div.s-result-item:has(> .sg-col-inner:only-child > div[class*="widget=loom-"][class*="FEATURED"])
@@ -38286,6 +38286,7 @@ beincrypto.com##.before-author-block-bio:has-text(Sponsored)
 beincrypto.com##.cont-wrapper
 beincrypto.com##.entry-content > small.text-grey-600
 beincrypto.com##.multi-news-card:has(> .cont-wrapper)
+beincrypto.com##[class^="TopAdBanner-"]
 beincrypto.com##aside[class^="Aside-"] > div.ant-card:has(div[data-analytics-events])
 beincrypto.com##div[class^="TopAdBanner-"]
 beincrypto.com#%#//scriptlet('abort-on-property-write', 'absrc')
@@ -56898,6 +56899,7 @@ linkedin.com##.premium-search-upsell
 linkedin.com##.scaffold-finite-scroll__content > div > div[data-id^="urn:li:activity:"]:has(.update-components-text-view > span[aria-hidden="true"]):not(:has(li-icon > svg))
 linkedin.com##[componentkey*="_expandedurn:li:sponsoredContentV2"]
 linkedin.com##article[data-is-sponsored]
+linkedin.com##iframe[componentkey$="_ad"]
 linkedin.com##iframe[componentkey="MynetworkDesktopNav_mynetwork_desktop_nav_ad"]
 linkedin.com##iframe[title="Advertisement"]
 linkedin.com##iframe[title="advertisement"]
@@ -81331,6 +81333,7 @@ zzzyk.com###Tinfo
 ||api.taboola.com^$app=Mahjong.exe|Solitaire.exe|Microsoft.Msn.News.exe
 ||api.tacotax.fr/v2/amplitude_trackers
 ||api.takealot.com^$ping
+||api.thefantazy.com/web-vitals
 ||api.tin.network/banners/
 ||api.tinypass.com^$domain=dallasnews.com
 ||api.tsc.ca/Tracking/v1/events/
@@ -83718,7 +83721,6 @@ zzzyk.com###Tinfo
 ||creately.com/static/js/creately-analytics-
 ||creative*.bidease.com^
 ||creative*.simulmedia-apis.com$media,redirect=noopmp4-1s,domain=play.geforcenow.com
-||creative.bulecams.com/widgets/$domain=xxxbule.com
 ||creative.myasian.live/widgets/
 ||creative.speednetwork*.com/speednetwork*/tags/x*/x*.js?ap=
 ||creativeservice-production.scdn.co/mp3-ad/*.mp3$media,~xmlhttprequest,redirect=noopmp4-1s,app=Spotify.exe
@@ -89099,7 +89101,6 @@ zzzyk.com###Tinfo
 ||melhorplano.net/scripts/tracker/
 ||member.aetna.com/appConfig/navReporting/tealeaf.js
 ||memesng.com/ads
-||memo.co^$third-party
 ||menepe.com^$popup
 ||meninosonline.net/assets/filmesgratis-$image
 ||mensjournal.com/.bootscripts/analytics.min.js
@@ -89921,9 +89922,6 @@ zzzyk.com###Tinfo
 ||niknok.ru/count.asp?
 ||nikonrumors.com/wp-content/uploads/2020/05/CaptureOne-Nikon-banner.jpg
 ||nimbusweb.me/gtlytics.js
-||nimiq.com^$third-party
-||nimiqpool.com^$third-party
-||nimpool.io^$third-party
 ||nindsstudio.com^$popup
 ||nineanime.com/files/js/ad_auto.js
 ||ninjacat.io^$third-party
@@ -90811,6 +90809,7 @@ zzzyk.com###Tinfo
 ||player.octivid.com/*/video?*&custom_ads=$removeparam=custom_ads,domain=kooora.com
 ||player.ooyala.com/errors/report?
 ||player.performgroup.com/eplayer.js$domain=fcinternews.it
+||player.sendtonews.com^$third-party
 ||player.serverbk.com/bkcdn*.xml
 ||player.twitch.tv/js/embed/$domain=wiki.fextralife.com
 ||player.twitch.tv/js/embed/v1.js$domain=wago.io|uesp.net
@@ -90887,7 +90886,6 @@ zzzyk.com###Tinfo
 ||pons.com/assets/javascripts/modules-min/ad-utilities_
 ||pons.com/assets/javascripts/modules-min/idm-ads_
 ||ponselharian.com/img/download_
-||pool.nimiq.watch^$third-party
 ||pop-parad.
 ||pop-under.
 ||pop.iamcdn.net/players/playhydraxb.min.js$important
@@ -93290,7 +93288,6 @@ zzzyk.com###Tinfo
 ||surveyspaid.com^$popup
 ||survivalblog.com/marketplace/
 ||survivalservers.com^$subdocument,domain=adfoc.us
-||sushipool.com^$third-party
 ||svc.dynamics.com/f/m/$third-party
 ||svc.dynamics.com/t/v/$third-party
 ||svc.dynamics.com/t/w$third-party

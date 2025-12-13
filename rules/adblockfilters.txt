@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251213003006
-! Last modified: 2025/12/13 00:30:06
-! Blocked Filters: 97656
+! Version: 20251213094739
+! Last modified: 2025/12/13 09:47:39
+! Blocked Filters: 97657
 !
 ###AC_ad
 ###AD_160
@@ -1332,7 +1332,6 @@
 ###ads-left-top
 ###ads-lrec
 ###ads-main
-###ads-menu
 ###ads-middle
 ###ads-mpu
 ###ads-outer
@@ -4143,7 +4142,6 @@
 ###sponsored_links
 ###sponsored_native_ad
 ###sponsoredad
-###sponsoredads
 ###sponsoredlinks
 ###sponsorfeature
 ###sponsorlink
@@ -4531,8 +4529,6 @@
 ###videoOverAd300
 ###videoPauseAd
 ###video_adv
-###video_advert
-###video_advert_top
 ###video_embed_ads
 ###video_hor_bot_ads
 ###video_overlay_ad
@@ -15949,8 +15945,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .com/pc/ad/
 .com/piaozi/*.js
 .com/players/*/-1/$script,third-party
+.com/players/*/-1/70/$script,third-party
 .com/players/*/-1/70/$xmlhttprequest
-.com/players/*/-1/70/*?hash=-$script,third-party
 .com/playlist?list=$jsonprune=\$..[adPlacements\, adSlots\, playerAds],domain=youtubekids.com|youtube-nocookie.com|youtube.com
 .com/pu/$script,domain=smutr.com
 .com/qq.js$third-party
@@ -25806,8 +25802,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||animexin.vip^$generichide
 @@||anisearch.*^$generichide
 @@||anitasrecipes.com/Content/Images/Recipes/$image,~third-party
+@@||anitube*.vip/playerricas.php$stealth=referrer
 @@||anitube.*^$generichide
-@@||anitube.vip/playerricas.php$stealth=referrer
 @@||aniview.com/api/$script,xmlhttprequest,domain=gamingbible.co.uk|ladbible.com|stirr.com
 @@||aniview.com/api/adserver/spt?$domain=sportbible.com
 @@||anizmstream*.com/cdn/down/$stealth=referrer,domain=anizmplayer.com|anizm.net
@@ -35051,6 +35047,8 @@ Mplay/kk1.js
 [$domain=/^vidhub\d+\.(cc\|top)$/]##.player-info div[class]:has(> div[class][style] > img[onclick^="window.open"]:first-child + span[style]:last-child)
 [$domain=/cosmic\d+\.co/]###floatcenter
 [$domain=/cosmic\d+\.co/]##.kln
+[$domain=/mixdrop\d+\.net/]#%#//scriptlet("abort-current-inline-script", "document.createElement", "dtnoppu")
+[$domain=/mixdrop\d+\.net/]#%#//scriptlet("prevent-addEventListener", "click", "dtnoppu")
 [$domain=/pornolomka\d+\.com/]#%#//scriptlet('abort-on-property-read', 'popns')
 [$domain=/tigoals\d+\.com/]##.banner
 [$domain=facebook.com,path=/adsmanager]#$#body > .AdBox.Ad.advert { display: block !important; }
@@ -39574,11 +39572,13 @@ bleepingcomputer.com##.articleBody > div[data-key] > div[style^="width:"]:not([c
 bleepingcomputer.com##.articleBody > div[style^="width:"]:not([class]):has(> a[target="_blank"])
 bleepingcomputer.com##.bc_guide
 bleepingcomputer.com##.bc_right_sidebar > .bc_guide:has(> ul > li > a.spon_res)
+bleepingcomputer.com##.bc_right_sidebar > div:has(> .cz-line-heading:first-child + ul:last-child > li > .spon_res:only-child)
 bleepingcomputer.com##.bc_right_sidebar div[align="center"] > a[target="_blank"] > img
 bleepingcomputer.com##.cz-post-comment-wrapp + .cz-related-article-wrapp:has(> .adsbygoogle)
 bleepingcomputer.com##.cz-sponsorposts
 bleepingcomputer.com##.cz-toa-wrapp
 bleepingcomputer.com##.ia_ad
+bleepingcomputer.com##.spon_res
 bleepingcomputer.com##[href*="https://www.bleepingcomputer.com/mgo/"]
 bleepingcomputer.com##[href^="https://www.bleepingcomputer.com/go/"]
 bleepingcomputer.com##[src*="https://www.bleepstatic.com/c/t/threatlocker/"]
@@ -42451,7 +42451,6 @@ comicbook.com##.adhesion-block
 comicbook.com##.embedVideoContainer
 comicbook.com##.modernInContent
 comicbook.com##.oas
-comicbook.com##.wp-block-savage-platform-primis-video
 comicbook.com#$#.ad_blk { position: absolute!important; left: -3000px!important; }
 comicbook.com#$#.landingstrip-list > li:not([data-key]) { visibility:hidden!important; }
 comicbook.com#$#[id^="oas_"] { position: absolute!important; left: -3000px!important; }
@@ -42459,6 +42458,7 @@ comicbook.com#$#body > header { top: 0!important; }
 comicbook.com#$#body > section.main { margin-top: 84px!important; }
 comicbook.com#$#body.pcm-public { margin-top: 95px !important; }
 comicbook.com,familyhandyman.com,tasteofhome.com,rd.com##.taboola-wrapper
+comicbook.com,vice.com##.wp-block-savage-platform-primis-video
 comicbookmovie.com###adATFLeaderboard
 comicbookmovie.com##.ad > .blur-up
 comicbookmovie.com#$#.ad { height: 1px !important; }
@@ -58959,8 +58959,6 @@ mcxlive.org,okpeliz.com,bluedollar.net,nulljungle.com,cehennemstream.xyz,mangacr
 mcxlive.org,okpeliz.com,bluedollar.net,nulljungle.com,cehennemstream.xyz,mangacrab.org,arigl.online,s0ft4pc.com,boyfuck.me,freereadnovel.online,idlixvip.asia,javboys.tv,asianboy.fans,techedubyte.com,yomucomics.com,tuksudia2.sbs,tuktukcinma.com#$#body > div[class*=" active"][style] { display: none !important; }
 md.hkgolden.com##.hkg-ad
 md.hkgolden.com#?##viewpage > .post:has(> :is(div[id^="div-gpt-"], .hkg-ad))
-md3b0j6hj.com,mixdrop21.net,mixdropjmk.pw,mdzsmutpcvykb.net,mdfx9dc8n.net,mdbekjwqa.pw,mixdroop.*,mixdrp.*,mixdrop.*#%#//scriptlet("abort-current-inline-script", "document.createElement", "dtnoppu")
-md3b0j6hj.com,mixdrop21.net,mixdropjmk.pw,mdzsmutpcvykb.net,mdfx9dc8n.net,mdbekjwqa.pw,mixdroop.*,mixdrp.*,mixdrop.*#%#//scriptlet("prevent-addEventListener", "click", "dtnoppu")
 md5hashing.net##.alert-promo
 md5hashing.net#%#//scriptlet("set-constant", "_app.adsBlocked.set", "falseFunc")
 mdbmax.com#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
@@ -59721,6 +59719,8 @@ mixdrop.*#%#//scriptlet("set-constant", "MDinjectP2", "undefined")
 mixdrop.*#%#//scriptlet("set-constant", "MDinjectP3", "undefined")
 mixdrop.sx##div[onclick*="MDinjectP"]
 mixdrop21.net,mixdropjmk.pw,mdzsmutpcvykb.net,mdfx9dc8n.net,mixdroop.*##body > div[style^="position: absolute;"][style*="z-index"]
+mixdrop23.net,md3b0j6hj.com,mixdrop21.net,mixdropjmk.pw,mdzsmutpcvykb.net,mdfx9dc8n.net,mdbekjwqa.pw,mixdroop.*,mixdrp.*,mixdrop.*#%#//scriptlet("abort-current-inline-script", "document.createElement", "dtnoppu")
+mixdrop23.net,md3b0j6hj.com,mixdrop21.net,mixdropjmk.pw,mdzsmutpcvykb.net,mdfx9dc8n.net,mdbekjwqa.pw,mixdroop.*,mixdrp.*,mixdrop.*#%#//scriptlet("prevent-addEventListener", "click", "dtnoppu")
 mixdrp.*##body > div[style^="position: absolute;"][style*="width: 100%; height: 100%; z-index:"]
 mixdrp.*,mixdrop.*#%#//scriptlet("set-constant", "MDCore.adblock", "0")
 mixesdb.com###adCatBottom
@@ -71707,6 +71707,7 @@ swisscows.com##.web-results > .a11t
 swisscows.com##.web-results > .a8r-web-page
 swisscows.com##.web-results > .item.sales
 swisscows.com##.web-results-sale
+swisscows.com#$#.web-results > article:has(> footer > .site > a[href*="bing.com/aclick"]) { position: absolute !important; left: -3000px !important; }
 swisstransfer.com##.promoCard
 swnovels.com#%#//scriptlet("set-constant", "canRunAds", "true")
 swoole.com##.swoole-resource

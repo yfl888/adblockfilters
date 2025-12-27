@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251227163112
-! Last modified: 2025/12/27 16:31:12
-! Blocked Filters: 97988
+! Version: 20251228002830
+! Last modified: 2025/12/28 00:28:30
+! Blocked Filters: 97989
 !
 ###AC_ad
 ###AD_160
@@ -35732,6 +35732,8 @@ aii.sh,lnbz.la,oii.la,tpi.li#%#//scriptlet('remove-node-text', 'script', '/check
 aii.sh,lnbz.la,oii.la,tpi.li$$script:contains(/checkAdblockUser|AdBlockCheck|\.offsetHeight/)
 aiimsneetshortnotes.com#%#//scriptlet("set-constant", "adsbygoogle", "undefined")
 aileen-novel.online##.c-sidebar
+aimagazine.com##.Advert_Advert__3TIcp
+aimagazine.com##.ArticleShare_ArticleShare__2O9DY
 ain.capital##.big-ad-animation-box
 ain.capital#?#.sidebar > .small-white-block:has(> .small-white-block-wrapper > div[id^="admixer_"])
 ainzscans01.com,ainzscans.net##body > div[style^="width:100%;height:100%;background:"]
@@ -37336,6 +37338,9 @@ artforum.com##div[data-component="ad-unit-gallery"]
 arti-flora.nl,chelsea24news.pl,footeuses.com,lespartisanes.com,24pdd.kz,livenewsof.com,librasol.com.br,yourlifeupdated.net,balkanteka.net,giuseppegravante.com,iggtech.com###td-outer-wrap + div[id][class*=" "]
 articlerewritertool.com,spinbot.com,free-article-spinner.com#%#//scriptlet("abort-current-inline-script", "angular", "/whiteListRequestMessage|canRunAds/")
 articles.mercola.com##.coupon-code
+artificialintelligence-news.com##[href^="https://bit.ly/"]
+artificialintelligence-news.com##[href^="https://www.ai-expo.net/"]
+artificialintelligence-news.com##[href^="https://www.artificialintelligence-news.com/go/"]
 artima.com,turbobit.net###topbanner
 artru.net##.artru-ads
 artscanvas.org##.funders
@@ -81555,7 +81560,6 @@ zzzyk.com###Tinfo
 ||58file.com/down/xyk.
 ||58jingxuan.top/115
 ||58jingxuan.top/dhbioperhbvoprwm
-||58tg.com^$third-party
 ||591.com.tw/stats/
 ||5axxw.com/extends/ad/
 ||5dariyanews.com/images/adherecolads.jpg
@@ -83352,7 +83356,6 @@ zzzyk.com###Tinfo
 ||bakupost.az/theme/frontend/y/style/default/images/whatsApp.jpeg
 ||balldollars.com^$popup
 ||ballive.*/addm/
-||ballyhoopla.club^$popup
 ||balmoralmkt.com^$third-party
 ||bandisoft.com/bandizip/ad/
 ||bangaloremirror.indiatimes.com/bmdge/
@@ -83683,6 +83686,7 @@ zzzyk.com###Tinfo
 ||biqiuge5.org/mo.
 ||biqivge.cc/js/d
 ||biqivge.cc/js/p
+||biquge700.com/h5/wap.
 ||biquge96.com/123.
 ||biqugie.com/js/wap.
 ||birdforum.net/data/siropu/
@@ -84780,7 +84784,6 @@ zzzyk.com###Tinfo
 ||click.alibaba.com^$subdocument,third-party
 ||click.ggpickyaff.com^$popup
 ||click.infonium.org^$domain=jetvid.top|fembedx.top|hihihaha1.xyz|playhydrax.com|hydrax.net|filmespi.online|playembedapi.site|abysscdn.com|player-cdn.com|nazarickol.com|mov18plus.cloud|asmrfreeplayer.fun
-||click.quk.com^$popup
 ||click.ru^$third-party
 ||click.taobao.com^$popup,domain=steamcn.com
 ||click.taobao.com^$script
@@ -92242,7 +92245,6 @@ zzzyk.com###Tinfo
 ||pkvs.com/public/300/
 ||pkvs.com/public/as.js
 ||pl.ua^$badfilter
-||pl520.com^$third-party
 ||placehold.co^$domain=layarkaca21.*
 ||pladform.ru^$third-party
 ||plainenglish.io/assets/sponsors/
@@ -97825,7 +97827,6 @@ zzzyk.com###Tinfo
 ||zhimg.com^*_600x250
 ||zhimg.com^*adx
 ||zhizhizhizhi.oss-*.aliyuncs.com^
-||zhongkaowu.com^$third-party
 ||zhongyi.ifeng.com/a/zt.js
 ||zhongyoo.com/img/js/tongji.js
 ||zhongyoo.com/shuju/

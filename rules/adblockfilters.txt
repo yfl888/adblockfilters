@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260111002913
-! Last modified: 2026/01/11 00:29:13
-! Blocked Filters: 99604
+! Version: 20260111100656
+! Last modified: 2026/01/11 10:06:56
+! Blocked Filters: 99613
 !
 ###AC_ad
 ###AD_160
@@ -15750,6 +15750,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .advert.$domain=~advert.ae|~advert.ge|~advert.io|~advert.ly|~advert.media|~advert.org.pl
 .alcmpn.com/
 .allalla.com^
+.animatebookstore.com/c/$image
 .aozorabank.co.jp/r/*/open/$image
 .apk0*oo.xyz/$script,xmlhttprequest,third-party
 .app.returnpath.net/
@@ -16300,6 +16301,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .qpqp0*oki.com/$script,xmlhttprequest,third-party
 .qqo*llo.com/$script,xmlhttprequest,third-party
 .qsko0*mas.com/$script,xmlhttprequest,third-party
+.qualtrics.com/subscription/watermark.gif?
 .quora.com/qemail/mark_read?
 .recolution.de/tools/emails/open/$image
 .redsift.com/e/o/$image
@@ -36821,8 +36823,10 @@ americanfreepress.net,sashares.co.za,strategicenergy.eu##.wppopups-whole
 americanhunter.org#@#.video-ad-container
 americannews.com#@#.wpInsertInPostAd
 americansongwriter.com,suggest.com,wideopencountry.com###sv-video-container
+americasvoice.news##a[href^="https://freekit.birchgold.com/"]
 americasvoice.news##div[class^="styles_wrap"]:has(> div[class] > div[id^="div-gpt-ad"])
 americasvoice.news##div[class^="styles_wrap"]:has(> div[class^="style_root"] > [src^="https://a.ads.rmbl.ws/"])
+americasvoice.news,arcadepunks.com##img[width="728"]
 amgelescape.com###ads-blog-content
 amgelescape.com##.sidebar > div[class="widget HTML"][id^="HTML"]
 amgelescape.com##div[class^="owneditads"]
@@ -37739,7 +37743,6 @@ arcadepunks.com##.footer-widget-style-1 > aside#custom_html-41
 arcadepunks.com##.penci-html-ads
 arcadepunks.com##a[href="https://www.arcadepunks.com/go/arcade_systems_skyscraper/"]
 arcadepunks.com##a[href^="https://www.arcadepunks.com/go/grs-foot-"]
-arcadepunks.com##img[width="728"]
 arcadepunks.com,thesaltysoldier.com,tvappapk.com#$#body > div[id]:has(> div > div[style^="font-size:clamp("]) { display: none !important; }
 arcadepunks.com,thesaltysoldier.com,tvappapk.com#$#body > div[id][style="display: block;"] { display: none !important; }
 arcadepunks.com,thesaltysoldier.com,tvappapk.com#$#body > div[id][style^="position:"]:empty { display: none !important; }
@@ -40699,6 +40702,7 @@ brief.pl#?#.primary-sidebar-widget > .section-heading > span:contains(/^Reklama$
 brief.pl#?#.vc_separator-has-text > h4:contains(/^Reklama$/)
 briefly.co.za##.c-adv-branding__top
 briefly.co.za##.post__sponsor-banner
+briefly.co.za,legit.ng,tuko.co.ke##.c-adv
 briefly.co.za,sportsbrief.com##.c-adv
 briefmenow.org##aside#secondary > a[href="https://www.prepaway.com/"][rel="nofollow"] > img
 brighteon.com##[href^="https://ams.brighteon.com/"]
@@ -51250,6 +51254,7 @@ go.zovo.ink#$##continue-button { display: block !important; }
 go.zovo.ink#$#center > a[target="_blank"] { display: none !important; }
 go4games.ro#?#.container > .mg-bottom-10 > .height-smb-100:has(> .strawberry-ads:only-child)
 go4kora.com###id-custom_banner
+goal.com##.ad-slot-live-score
 goal.com##.aside_ad-rail__cawG6
 goal.com##.commercial
 goal.com##.component-ad
@@ -51264,6 +51269,7 @@ goal.com##[data-type="AdSlot"]
 goal.com##a[href^="https://ad.doubleclick.net/"]
 goal.com##aside[class^="layouts_asideContentCommercial__"]
 goal.com##div[class^="article_daznMatchesBanner_"]
+goal.com##div[class^="game-day_ad-"]
 goal.com##div[class^="layout_banner__"]
 goal.com##div[class^="open-web-ad_"]
 goal.com##div[data-testid="ad-slot"]
@@ -57982,7 +57988,6 @@ legionisci.com##div[class^="ad-billboard"] + .extras
 legionisci.com##div[class^="ad-rectangle"]
 legit.ng##.c-adv--video-placeholder
 legit.ng##div[class^="l-adv-branding__"]
-legit.ng,tuko.co.ke##.c-adv
 legit.ng,tuko.co.ke##.l-adv-branding__top
 leicarumors.com###text-467498341
 leiling.org##.ad__single-double-rectangle-wrap
@@ -63426,6 +63431,7 @@ nieznany-numer.pl##.content div[style="height:280px"]
 nieznany-numer.pl#@#.content > div
 niftytrader.in##.top_six_brokers
 niftytrader.in##.zerodha-bottom-box
+nightingaledvs.com##.widget-area--below-post
 nihon-ikuji.com#@#.showads
 nikaplayer.com,kissmovies.net,wishonly.site,jwplayerhls.com,vidhidepro.com,dwish.pro,strwish.com,kamehamehaa.xyz,kamehaus.net,vidhidepre.com,swdyu.com,fdewsdc.sbs,recordplay.biz,jodwish.com,anitaku.to,alions.pro,vidhidevip.com,moviekhhd.online,cdnwish.com,anime4low.sbs,anime7u.com,flaswish.com,obeywish.com,guccihide.store,fsdcmo.sbs,javlion.xyz,sfastwish.com,wishfast.top,vhmovies.to,awish.pro,fc2stream.tv,mwish.pro,embedwish.com,javhahaha.us,streamvid.top,playertv.net,sbrity.com,doodporn.xyz,mycloud123.top,streamsb.click,streamxxx.online,filelions.*,projectfreetv.lol,streamwish.to,javb1.com,sbface.com,rbtstream.info,sbhight.com,sbbrisk.com,cloudrls.com,mm9846.com,sbchill.com,imfb.xyz,dizivap.*,dvapizle.*,mavavid.com,fembed9hd.com,mm9844.*,faptiti.com,javsubbed.xyz,av4asia.com,playerjavseen.com,streamsss.net,vcdn-stream.xyz,javuncen.xyz,ssbstream.net,watch-jav-english.live,obaplayer.xyz,watchjavnow.xyz,nsfwzone.xyz,jav247.top,myvideoplayer.monster,jvembed.com,javleaked.com,pornhole.club,fembed-hd.com,netflav.com,cutl.xyz,nekolink.site,streamsb.net,javside.com,sbplay2.*,hentai4.me,playersb.com,streamabc.xyz,diasfem.com,milfnut.net,pelispop.net,fplayer.info,mm9842.com,sbplay1.com,javmvp.com,vidcloud.*,mavplayer.xyz,sbplay.*,dfmagazine.co.uk#%#//scriptlet('abort-on-property-read', '__Y')
 nikaplayer.com,kissmovies.net,wishonly.site,jwplayerhls.com,vidhidepro.com,dwish.pro,strwish.com,kamehamehaa.xyz,kamehaus.net,vidhidepre.com,swdyu.com,fdewsdc.sbs,recordplay.biz,jodwish.com,anitaku.to,alions.pro,vidhidevip.com,moviekhhd.online,cdnwish.com,anime4low.sbs,anime7u.com,flaswish.com,obeywish.com,guccihide.store,fsdcmo.sbs,javlion.xyz,sfastwish.com,wishfast.top,vhmovies.to,awish.pro,fc2stream.tv,mwish.pro,embedwish.com,javhahaha.us,streamvid.top,playertv.net,sbrity.com,doodporn.xyz,mycloud123.top,streamsb.click,streamxxx.online,filelions.*,projectfreetv.lol,streamwish.to,javb1.com,sbface.com,rbtstream.info,sbhight.com,sbbrisk.com,cloudrls.com,mm9846.com,sbchill.com,imfb.xyz,dizivap.*,dvapizle.*,mavavid.com,fembed9hd.com,mm9844.*,faptiti.com,javsubbed.xyz,av4asia.com,playerjavseen.com,streamsss.net,vcdn-stream.xyz,javuncen.xyz,ssbstream.net,watch-jav-english.live,obaplayer.xyz,watchjavnow.xyz,nsfwzone.xyz,jav247.top,myvideoplayer.monster,jvembed.com,javleaked.com,pornhole.club,fembed-hd.com,netflav.com,cutl.xyz,nekolink.site,streamsb.net,javside.com,sbplay2.*,hentai4.me,playersb.com,streamabc.xyz,diasfem.com,milfnut.net,pelispop.net,fplayer.info,mm9842.com,sbplay1.com,javmvp.com,vidcloud.*,mavplayer.xyz,sbplay.*,dfmagazine.co.uk#%#//scriptlet('abort-on-property-read', 'myScriptManager')
@@ -64032,6 +64038,7 @@ obrazkowo.pl##.adVerticalBannerSize
 obrazkowo.pl##app-list .col-md-10 > .ng-star-inserted > .ng-star-inserted:has(> .row:only-child > .justify-content-center:only-child > .publiftAd)
 obrazkowo.pl##body .publiftAd
 observatornews.ro##.outstream-text
+observer.co.uk##._minH-_md_90px
 observer.com###top-banner-container
 observer.com#@#.AdSense
 observerbd.com##.col-lg-4 > div[style^="padding"]:has(> ins.adsbygoogle)
@@ -75461,6 +75468,7 @@ tiktok.com#%#//scriptlet('json-prune-fetch-response', 'itemList.*.ad_info.ad_id'
 tim.it#$##modal_offerta { display:none!important; }
 tim.it#$#.modal-backdrop { display:none!important; }
 tim.it#$#.modal-open { overflow:visible!important; }
+time.com###pre-nav-container
 time.com###sponsorshiplogo1
 time.com##.X9rgC5Js
 time.com##._2bnZiB_7
@@ -80193,6 +80201,7 @@ wsj.com,edition.cnn.com#%#//scriptlet('set-constant', 'apstag', 'undefined')
 wsls.com##.floatingWrapper
 wsls.com,gmg-wjxt-prod.cdn.arcpublishing.com,ksat.com##.topWrapper
 wss://*.*.top/$third-party
+wss://*.com:29189/880
 wss://*.top/|
 wss://*.xyz:*?e=$third-party
 wss://*.xyz:*?x=$third-party
@@ -85356,6 +85365,7 @@ zzzyk.com###Tinfo
 ||bridge-ashiato.appspot.com/beacon/
 ||brief.pl/wp-content/uploads/*/*/*-Banner-*.gif
 ||brieflizard.com^$popup
+||briefly.co.za/banners/
 ||briefmenow.org/img/modal-prepaway.js
 ||brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xmlhttprequest,domain=tvnz.co.nz|roosterteeth.com|nhl.com|9now.com.au|video.telequebec.tv|player.stv.tv
 ||brightcovecdn.com/playback/*/*?ad_config_id=$removeparam=ad_config_id,xmlhttprequest,domain=tvnz.co.nz|roosterteeth.com|nhl.com|9now.com.au|video.telequebec.tv|player.stv.tv
@@ -87489,7 +87499,6 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
-||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eavesofefinegoldf.info^$popup
 ||ebay.com/delstats/
@@ -90173,6 +90182,7 @@ zzzyk.com###Tinfo
 ||indiatimes.com/toiitpic/
 ||indiatimes.com/v*/feeds/affiliates/msp_rhs_widget
 ||indiegogo.com/speclayer/stdfp.js
+||indigitall.com/v1/browser?
 ||inetstatic.com/tracking/
 ||inews.co.uk/rta2/
 ||inews.co.uk/static/inews-ab-dialog/inewsFeAdblockDialog.
@@ -92908,7 +92918,6 @@ zzzyk.com###Tinfo
 ||njxzwh.com/pcsoft/statics/ycgg/
 ||nmc.cn/static/nmclog/nmclog.js
 ||nmgnews.com.cn/sys/online_calc.js
-||nn125.com^$popup
 ||nnteens.com/ad$subdocument
 ||nnteens.com/adnium
 ||no1.168abc.net/upload/

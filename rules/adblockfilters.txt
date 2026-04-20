@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260420004545
-! Last modified: 2026/04/20 00:45:45
-! Blocked Filters: 100641
+! Version: 20260420105756
+! Last modified: 2026/04/20 10:57:56
+! Blocked Filters: 100643
 !
 ###AC_ad
 ###AD_160
@@ -39601,6 +39601,7 @@ bitporno.*#%#//scriptlet("abort-on-property-write", "atOptions")
 bitsearch.to,solidtorrents.to#?##alart-box > .view-box:has(> #alart-message > a[target="_blank"])
 bitsnoop.com###vpnBar
 bittorrent.am##td[align="center"] > a[rel="nofollow"] > img
+bitxzlhi*.top/$script,xmlhttprequest,third-party
 biz.ifeng.com##.header
 biz.ifeng.com##.riodel
 bizcommunity.com##.b-topbanner
@@ -86361,6 +86362,7 @@ zzzyk.com###Tinfo
 ||bz88888.net/js/cdn.js
 ||bzdiao.com/wp-content/uploads/bhOCwJfYleFC/
 ||bzhanyy.com^*.gif
+||bzrcdn.openai.com/sdk/oaiq.min.js
 ||c*hit.zerkalo.io^
 ||c-ctrip.com/ResUnionOnline/R3/float/floating_normal.min.js
 ||c-ctrip.com/images/0101r120009e1kn7oCDCA.gif

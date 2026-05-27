@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260527022914
-! Last modified: 2026/05/27 02:29:14
-! Blocked Filters: 102406
+! Version: 20260527120523
+! Last modified: 2026/05/27 12:05:23
+! Blocked Filters: 102412
 !
 ###AC_ad
 ###AD_160
@@ -30823,6 +30823,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||matlab.mathworks.com^$generichide
 @@||matomo.miraheze.org/matomo.js$script,~third-party
 @@||matomo.moeci.com/matomo.js$domain=moeci.com
+@@||matprat.no^$stealth=dpi
 @@||matrix.redditspace.com^$stealth=3p-auth
 @@||matsukiyococokara-online.com/store/*/rtoaster.js
 @@||matzoo.pl^$generichide
@@ -31425,7 +31426,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||nu.nl^$generichide
 @@||nu6i-bg-net.com^$generichide
 @@||nuevos-mu.ucoz.com^$generichide
-@@||nuggad.net^$domain=sportdeutschland.tv
 @@||nulledteam.com/js/*/adsservice.js
 @@||nulledteam.com^$generichide
 @@||nullforums.net/js/*/uvb-tag-ad.js
@@ -33130,7 +33130,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||retweetpicker.com^$generichide
 @@||reuters.com^$generichide
 @@||rev.evrensel.net/www/delivery/*.php
-@@||revdownload.com/*.php$generichide
 @@||revive.adsession.com/www/delivery/ck.php$domain=spankwire.com
 @@||rexdlfile.com/index.php?id=$stealth=referrer
 @@||rg-tiles.b-cdn.net^$stealth=referrer
@@ -35948,6 +35947,7 @@ a9vg.com##.a9-back-top_qrcode
 aa.com.tr#?#.container > style ~ div.ad:has(> span > a:not([href^="https://www.aa.com.tr/"]))
 aa25.cn###content_head
 aa25.cn,kafan.cn###content_top
+aaaweb.cn##a[href$=".yhzu.cn"]
 aads.com,ad-maven.com,adcash.com,admitad.com,adskeeper.com,adspyglass.com,adsupply.com,chpadblock.com,exoclick.com,hilltopads.com,juicyads.com,monetag.com,popads.net,propellerads.com,purpleads.io,trafficshop.com,yavli.com##HTML
 aae3.com###menu
 aae3.com##form + center > p[align="center"]
@@ -38241,6 +38241,7 @@ arukereso.hu##.promotion-container
 arydigital.tv###zzright
 arydigital.tv,barakbulletin.com##.bsac
 arynews.tv##.tdi_103
+as.com##.a_rel
 as.com##.ad-e2
 as.com##.slider-producto
 as.com,desdelinux.net,tutiempo.net,ubunlog.com##.publi
@@ -70750,7 +70751,6 @@ reuters.com#?#div[class^="regular-article-layout__inner_"]:has(> div[data-testid
 reuters.com#?#div[class^="regular-article-layout__refinitiv_workspace"]:has(> div[class] > a img[class^="workspace-article-banner"])
 reuters.com#?#h4:contains(Advertisement)
 reuters.com#@#[class^="primary-video__container_"]
-revdownload.com##.text-ads > a
 reverse-dictionary.virock.org#%#//scriptlet('set-constant', 'adsbygoogle', 'emptyArr')
 reverso.net###bottom-mega-rca-box
 reverso.net###locdbanner
@@ -87589,6 +87589,7 @@ zzzyk.com###Tinfo
 ||bookwalker.jp/custom/unitag/
 ||bookwalker.jp/ex/browser-viewer/unitag_bv.js
 ||bookwalker.jp/v/louis/*/tracks.js
+||boomplaymusic.com/BoomPlayer/ad/
 ||bootdisk.com/art/war.png
 ||bootyheroes.com//static/assets/img/banners/
 ||borneobulletin.com.bn/wp-content/banners/
@@ -89604,6 +89605,7 @@ zzzyk.com###Tinfo
 ||downlinker.*/ads.js
 ||download-adblockgenius.com^$popup
 ||download-file.org^$popup
+||download-performance.com^$popup
 ||download.cnet.com/revamp.js
 ||download.megaup.net/*.jpg$~third-party,image,redirect=1x1-transparent.gif
 ||download.megaup.net/download
@@ -90374,6 +90376,7 @@ zzzyk.com###Tinfo
 ||fetishshrine.com/jsb/js_script.js
 ||fetishshrine.com/plugin.js
 ||fetlife.com/ads/
+||fewcents.co^$third-party
 ||feyorra.top/next.js
 ||ffdm*.cc/dd.js
 ||ffdm2.cc/ht_cpc.js
@@ -92683,6 +92686,7 @@ zzzyk.com###Tinfo
 ||instagram.com/logging_client_events
 ||instagram.com/paid_ads/
 ||install*.zonastat.com^
+||installiq.com/Pixels/
 ||instana.io^$third-party
 ||instancesflushedslander.com^$popup
 ||instant-adblock.xyz^$popup
@@ -94492,6 +94496,8 @@ zzzyk.com###Tinfo
 ||mdsglvod-a.akamaihd.net/vod/2.0/progressive/*/x.mp4$redirect=noopmp4-1s,domain=ttv.pl
 ||mdstrm.com/js/lib/streammetrics.js
 ||mdxprod.io/analytics.js
+||me-qr.com/metrics/
+||me-qr.com/statistic/collect/
 ||me360.com/swt/swt.js
 ||me4track.com^$popup
 ||me680.com/js/*.js

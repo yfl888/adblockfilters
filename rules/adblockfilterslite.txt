@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20260621122801
-! Last modified: 2026/06/21 12:28:01
-! Blocked Filters: 42624
+! Version: 20260621191908
+! Last modified: 2026/06/21 19:19:08
+! Blocked Filters: 42612
 !
 ###AC_ad
 ###AD_160
@@ -24028,6 +24028,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||1991421.cn^$generichide
 @@||199it.com^$generichide
 @@||2345.com/images/activity/20171111/open/j/close.png
+@@||40017.cn/cn/min/???/
 @@||50.7.*.*:8081/*?wmsAuthSign=$stealth=referrer
 @@||51.15.*/videoplayback?vid=$stealth=referrer
 @@||51img1.com/??*/adsys.
@@ -28659,7 +28660,6 @@ cdr.cz,diit.cz#$#html > body { background-image: none!important; padding-top: 0!
 cdrab.com,offerinfo.net##.adslr
 cdromance.org,dailymusicroll.com,cdromance.com,pridesource.com,watchtv24.com,4sysops.com,artificialintelligencestechnology.com,paradacreativa.es,cdromance.com,techspite.com,aceofhacking.com,nationalchronicle.in,valuewalk.com###custom_html-8
 ce.cn,chenjiayu.cn,chinabidding.com.cn,eastmoney.com,ieforex.com,laod.cn,likefont.com,shangyexinzhi.com,zp365.com##.advert
-ceiea.com##.adclass2019
 centoschina.cn##a[href="https://www.linuxprobe.com/"]
 centris.ca,forums.minecraftforge.net,leaked.cx,nextdoor.com,staradvertiser.com,uploadvr.com##.promo-container
 centris.ca,minecraftforge.net##.promo-container
@@ -30226,8 +30226,6 @@ f2movies.to,moviesjoy.to##.news-iframe
 f2movies.to,streameast.watch#%#//scriptlet("abort-current-inline-script", "JSON.parse", "getPropertyValue('content')")
 f95zone.to,imagetwist.com##a[href^="https://candy.ai/"]
 f95zone.to,pornhub.com,pornhubpremium.com,redtube.com##a[href^="https://ads.trafficjunky.net/"]
-faayoo.com###footer_fd
-faayoo.com##.qr_code
 fabconvert.com,knews.com.tw,1905.com,news.ltn.com.tw,commonhealth.com.tw,health.tvbs.com.tw,idreamx.com,xchina.*,manhuafen.com,world68.com##.ad
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion###megamall_rhc_ssfy_pagelet
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion###pagelet_ego_pane > .pagelet:not(.egoOrganicColumn)
@@ -35663,9 +35661,6 @@ sd.ifeng.com##div[data-title*="广告位"]
 sd.ifeng.com##div[style="width:1000px; margin:10px auto 0 auto;"]
 sdo.com##.mod-public-ads
 sdo.com##a[class^="side-nav-box-daoyu"]
-sdzbcg.com##table[height="41"]:last-child
-sdzbcg.com##td[width="297"] img
-sdzbcg.com##td[width="580"][height="279"] > table:nth-child(2n-1)
 se.pl,poradnikzdrowie.pl###hook_box_topboard
 search.bilibili.com##.video-list > div:has(> .bili-video-card > .bili-video-card__wrap > .bili-video-card__info > .bili-video-card__info--right > .ad-feedback-entry)
 search.brave.com,thesportsrush.com##[data-type="ad"]
@@ -38125,7 +38120,6 @@ xvideos.com,xvideos.es##.player-video.xv-cams-block
 xvideos.es,xvideos.com,xnxx.*,xv-ru.com,xnxx-ru.com##.e-banner-game
 xvideos.es,xvideos.com,xv-ru.com##.top-top
 xw.qq.com##.globalThemeTip
-xxt.cn#@##mainAd
 xxvidsx.com,tubsxxx.com##.videoAd
 xxx18.uno,xxxxvideo.uno##.place-wink
 xxxadd.com/eureka
@@ -38759,7 +38753,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||24scor*.*/img/*background$image
 ||24scor*.*/img/branding
 ||2500sz.com/site/
-||258zw.com^$third-party
 ||2ccc.com/images/WebXone.gif
 ||2ccc.com/images/aobi.gif
 ||2ccc.com/images/sdo.jpg
@@ -39189,6 +39182,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||anisearch.*/partner?$subdocument,domain=anisearch.*
 ||anixwallpaper.com^$csp=script-src 'self' * 'unsafe-inline'
 ||anjuke.com^*/ajax/business_area_search/
+||ankangwang.com/js/info.js
 ||anqu.com/b.js
 ||antik-war.lv^$cookie=AntikWarUsersGood
 ||antpedia.com/antad/
@@ -39223,7 +39217,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||api.steampp.net/api/Advertisement/
 ||api.taboola.com^$app=Mahjong.exe|Solitaire.exe|Microsoft.Msn.News.exe
 ||api16-access-ttp*.tiktokpangle-b.us^
-||apic.91bixin.net/api/thirdadv/
 ||apiproxy-log-nlb-1f304af4d3ac01a4.elb.us-east-*.amazonaws.com^
 ||apk-01.oss-cn-beijing.aliyuncs.com/dp/
 ||aplus.qwen.ai/aplus.monitor.log_arrival_rate
@@ -39860,9 +39853,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||d*.xinshipu.com^
 ||d1z2jf7jlzjs58.cloudfront.net^$rewrite=abp-resource:blank-js,domain=voici.fr
 ||da.duowan.com/loc/
-||dabaoku.com^$object,script,subdocument
 ||dabin69.com/data/attachment/portal/
-||daf-rs.com/imageViewer/wpAd
 ||dahe.cn/indiboy/ads/
 ||dailynews.sina.com/gb/ads/
 ||daiyanbao.com/flash/md
@@ -39989,6 +39980,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||douyin.com/aweme/v1/web/solution/resource/list/*_banner&
 ||douyu.com/japi/sign/web/getinfo
 ||douyu.com/member/gamegift/gameList/
+||down-id.img.susercontent.com/file/*.webp$domain=lk21.am.in
 ||downlinker.*/ad_dl.js
 ||downlinker.*/ads.js
 ||downxia.com/dgjs/download.js
@@ -40310,7 +40302,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||gtimg.cn/music/photo_new/T053XD001001BZyX50UcRRk.
 ||gtlpa*.com^
 ||gtmdev.jabra.
-||gtpso.com/Home/TopSdk/getFavCoupItems
 ||guahao.cn/blank.gif?
 ||gucheng.com/2016/ggimg/
 ||gucheng.com/gcwad/
@@ -40963,7 +40954,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||longzhu.com/i/api/videos/dailyRecommend?
 ||longzhu.com/recommendad/
 ||lookmovie*/images/ads/
-||looyu.com^$third-party
 ||lotour.net/analytics/statsv2.js
 ||lotour.net/bcef/388.js
 ||lotuscard.cc/online/
@@ -41667,7 +41657,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||sdk-*.moengage.com^
 ||sdk.fra-*.braze.eu^
 ||sdo.com/static/image/mkads/
-||sdzbcg.com/images/sdfhyl
 ||seed*.bitchute.com/*/media_*.mp4$media,redirect=noopmp3-0.1s
 ||seed*.bitchute.com/*/play_*.mp4$media,redirect=noopmp4-1s
 ||seek68.cn/img/*.gif
@@ -41970,7 +41959,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||szfcol.com/images/wxright240.jpg
 ||szfcol.com/js/siteAd.js
 ||szlite.cn^$third-party
-||sznews.com/s?z=
 ||t*.baidu.com/it/u=*,*&fm=76$third-party
 ||t*.playdigo.live^
 ||t*.zcvh.net^

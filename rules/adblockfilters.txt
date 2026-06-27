@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260627015138
-! Last modified: 2026/06/27 01:51:38
-! Blocked Filters: 102902
+! Version: 20260627114152
+! Last modified: 2026/06/27 11:41:52
+! Blocked Filters: 102904
 !
 ###AC_ad
 ###AD_160
@@ -14427,7 +14427,6 @@
 ##IMG[onclick*="bucd.lol"]
 ##IMG[onclick='godown()'][src$='gif']
 ##IMG[onclick='golh()'][src$='.gif']
-##IMG[referrerpolicy='no-referrer'][src$='.gif'][width='100%']
 ##IMG[referrerpolicy='no-referrer'][style='box-sizing: border-box;height:calc(10vh); width:100%;padding: 0px 15px 10px 15px;']
 ##IMG[src$='.dl'][style='width:100% !important;height:90px'][onclick]
 ##IMG[src$='tywheying/vv2-960x80.gif']
@@ -88330,6 +88329,7 @@ zzzyk.com###Tinfo
 ||birdsend.co/assets/static/js/pixel/
 ||birdsend.email/pixel
 ||birdsend.net/pixel
+||bis.org/metrics/web.gif?
 ||bisecthosting.com/partners/custom-banners/$third-party
 ||bistream.xyz/js/loader.js
 ||bit.ly/2FQyhNq$subdocument
@@ -95743,6 +95743,7 @@ zzzyk.com###Tinfo
 ||moreamateurs.com/v/image.php
 ||morfo.*.amazonaws.com/*/banner_*.gif$domain=sciaga.pl
 ||morfo.*.amazonaws.com/*/screning-*_*.jpg$domain=sciaga.pl
+||morningstar.com/api/v1/analytics
 ||mortgagecentres.net/banner.gif
 ||moshimo.com^$third-party
 ||moshimo.com^*/impression?
@@ -98591,6 +98592,7 @@ zzzyk.com###Tinfo
 ||segmentfault.com/sponsor/
 ||segmentnext.com/LhfdY3JSwVQ8.js
 ||seir-sanduk.com/adblockaclib.js
+||seismic.com/playerservice/api/v1/log?
 ||selectika.com/selectika-pixel.min.js
 ||selector.voltaxam.com/ads
 ||seller-log-collector.shopee.
